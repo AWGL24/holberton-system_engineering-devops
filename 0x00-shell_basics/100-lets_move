@@ -1,2 +1,2 @@
 #!/bin/bash
-mv | grep "^[A-Z]" /tmp/u
+grep "^[A-Z]" /tmp/u
