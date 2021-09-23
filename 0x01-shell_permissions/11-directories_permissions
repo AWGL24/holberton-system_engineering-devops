@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod ugo+x ./*
+sudo chmod a+x $(find -type d)
