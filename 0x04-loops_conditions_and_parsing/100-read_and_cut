@@ -2,5 +2,5 @@
 #! bash script that displays the content of the file etc/passwd
 while read -r LREAD
 do
-    echo $LREAD | cut -d":" -f1,3,6
+    echo "$LREAD" | cut -d":" -f1,3,6
 done < /etc/passwd
