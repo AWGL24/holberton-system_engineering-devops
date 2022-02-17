@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+#!bash script that loops from 1 to 10
+x=0
+while [ $x -le 9 ]
+do
+	echo Best School
+	((x++))
+	if [ $x == 3 ]
+	then
+	echo bad luck
+	((x++))
+	elif [ $x == 7 ]
+	then
+	echo good luck
+	((x++))
+	fi
+done
