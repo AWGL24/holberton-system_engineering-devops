@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 #!bash script that displays Best School 10 times
 i=0
 until [ $i -gt 9 ]
