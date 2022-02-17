@@ -7,11 +7,11 @@ do
 	((x++))
 	if [ $x == 3 ]
 	then
-	echo bad luck
-	((x++))
+		echo bad luck
+		((x++))
 	elif [ $x == 7 ]
 	then
-	echo good luck
-	((x++))
+		echo good luck
+		((x++))
 	fi
 done
