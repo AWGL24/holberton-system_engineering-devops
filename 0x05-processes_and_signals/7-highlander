@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# bash script that displays 4 indefinitely
+while :
+do
+	printf "To infinity and beyond\n"
+	sleep 2
+	trap "echo I am invincible!!!" SIGTERM
+done
