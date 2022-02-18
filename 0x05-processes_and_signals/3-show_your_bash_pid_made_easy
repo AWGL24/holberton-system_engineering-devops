@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# bash scipt that displays teh PID
+pgrep -l bash
