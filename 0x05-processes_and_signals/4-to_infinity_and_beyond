@@ -2,6 +2,6 @@
 # bash script that displays to infinity and beyond
 while :
 do
-	echo to infinity and beyond
+	echo To infinity and beyond
 	sleep 2
 done
