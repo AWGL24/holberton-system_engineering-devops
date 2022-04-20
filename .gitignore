@@ -6,3 +6,5 @@
 0x0B-ssh/school.pub
 0x08-networking_basics_2/0-change_your_home_IP
 0x0B-ssh/100-puppet_ssh_config.pp
+0x0A-configuration_management/2.1.0,
+0x0A-configuration_management/pip3,
