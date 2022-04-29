@@ -35,10 +35,11 @@ defaults
 
 frontend load_balancer
 	bind *:80
+	bind *:443 ssl crt /etc/haproxy/certs/www.drew24.tech.pem
 	mode http
 	default_backend webserver
+
 backend webserver
 	balance roundrobin
 	server 3239-web-01 34.139.253.47:80 check
 	server 3239-web-02 107.21.145.67:80 check
-bind *:443 ssl crt /etc/haproxy/certs/www.drew24.tech.pem
