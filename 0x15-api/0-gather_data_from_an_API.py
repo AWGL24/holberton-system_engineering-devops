@@ -2,8 +2,8 @@
 """
 Module holds python script that returns information about an employee todo list
 """
-import requests
 from sys import argv
+import requests
 
 if __name__ == "__main__":
     url = 'https://jsonplaceholder.typicode.com/todos'
