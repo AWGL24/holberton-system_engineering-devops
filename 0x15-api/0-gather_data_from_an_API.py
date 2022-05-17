@@ -2,8 +2,8 @@
 """
 Module holds python script that returns information about an employee todo list
 """
-import requests
 from sys import argv
+import requests
 import json
 
 if __name__ == "__main__":
