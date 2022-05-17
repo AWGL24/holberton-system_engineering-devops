@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 """
-Module holds python script that returns information about an employee todo list
+Module holds python script that
+returns information about an employee todo list
 """
 import requests
 from sys import argv
 
 if __name__ == "__main__":
+
     url = 'https://jsonplaceholder.typicode.com/todos'
     parameters = (('userId', argv[1]),)
     request_todo = requests.get(url, params=parameters)
@@ -21,8 +23,8 @@ if __name__ == "__main__":
         if task['completed']:
             MyList.append(task)
 
-    print("Employee {} is done with tasks({}/{}):".format(user[0]["name"],
-          len(MyList), len(todos)))
+    print("Employee {} is done with tasks({}/{}):".format(
+        user[0]["name"], len(MyList), len(todos)))
     if len(MyList) > 0:
         for task in MyList:
-            print("\t{}".format(task['title']))
+            print("\t {}".format(task['title']))
