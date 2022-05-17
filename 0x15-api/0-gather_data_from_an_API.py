@@ -2,9 +2,8 @@
 """
 Module holds python script that returns information about an employee todo list
 """
-from sys import argv
 import requests
-import json
+from sys import argv
 
 if __name__ == "__main__":
     url = 'https://jsonplaceholder.typicode.com/todos'
@@ -13,15 +12,16 @@ if __name__ == "__main__":
     todos = request_todo.json()
 
     url = 'https://jsonplaceholder.typicode.com/users'
-    parameters = argv[1]
-    request_user = requests.get(url, params=parameters).json().get('name')
+    parameters = (('id', argv[1]),)
+    request_user = requests.get(url, params=parameters)
+    user = request_user.json()
 
     MyList = []
     for task in todos:
         if task['completed']:
             MyList.append(task)
 
-    print("Employee {} is done with tasks({}/{}):".format(request_user,
+    print("Employee {} is done with tasks({}/{}):".format(user[0]["name"],
           len(MyList), len(todos)))
     if len(MyList) > 0:
         for task in MyList:
